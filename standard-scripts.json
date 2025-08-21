@@ -1,0 +1,18 @@
+{
+  "javascript": {
+    "scripts": {
+      "start": "node src/index.js",
+      "dev": "node src/index.js",
+      "test": "node src/index.js --test"
+    }
+  },
+  "typescript": {
+    "scripts": {
+      "build": "tsc",
+      "start": "node dist/index.js",
+      "dev": "tsc --watch",
+      "test": "npm run build && node dist/index.js --test",
+      "clean": "rm -rf dist"
+    }
+  }
+}
